@@ -1,0 +1,6 @@
+c:\users\arel\documents\visual studio 2015\Projects\il.ac.shenkar\il.ac.shenkar\bin\Debug\il.ac.shenkar.exe.config
+C:\Users\Arel\documents\visual studio 2015\Projects\il.ac.shenkar\il.ac.shenkar\bin\Debug\il.ac.shenkar.exe
+C:\Users\Arel\documents\visual studio 2015\Projects\il.ac.shenkar\il.ac.shenkar\bin\Debug\il.ac.shenkar.pdb
+C:\Users\Arel\documents\visual studio 2015\Projects\il.ac.shenkar\il.ac.shenkar\obj\Debug\il.ac.shenkar.csprojResolveAssemblyReference.cache
+C:\Users\Arel\documents\visual studio 2015\Projects\il.ac.shenkar\il.ac.shenkar\obj\Debug\il.ac.shenkar.exe
+C:\Users\Arel\documents\visual studio 2015\Projects\il.ac.shenkar\il.ac.shenkar\obj\Debug\il.ac.shenkar.pdb
