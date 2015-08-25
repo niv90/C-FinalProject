@@ -1,0 +1,9 @@
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\bin\Debug\UnitTestProject.dll
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\bin\Debug\UnitTestProject.pdb
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\bin\Debug\il.ac.shenkar.exe
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\bin\Debug\il.ac.shenkar.pdb
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\obj\Debug\UnitTestProject.dll
+c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\obj\Debug\UnitTestProject.pdb
