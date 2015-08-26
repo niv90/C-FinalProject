@@ -66,7 +66,7 @@ namespace il.ac.shenkar
                 {
                     xml = client.DownloadString(URLString);// xml url to string
                 }
-                catch (WebException ex)
+                catch (WebException)
                 {
                     throw new WeatherDataServiceException("There is not internet connection");
                 }
@@ -77,6 +77,7 @@ namespace il.ac.shenkar
             var weather = from x in ob.Descendants("current")
                           select new
                           {
+                              City = x.Descendants("city").Attributes("name").First().Value,
                               Sun = x.Descendants("sun").Attributes("rise").First().Value,
                               Set = x.Descendants("sun").Attributes("set").First().Value,
                               Tempat = x.Descendants("temperature").Attributes("value").First().Value,
@@ -91,6 +92,7 @@ namespace il.ac.shenkar
                 //them into the WeatherData service values.
                 foreach (var data in weather)
             {
+                wd.location.Country = data.City;
                 wd.sunrise.Sunrise = data.Sun;
                 wd.sunset.Sunset = data.Set;
                 wd.lastupdate.Update = data.Update;
@@ -100,11 +102,11 @@ namespace il.ac.shenkar
                 wd.wind.Speed = Double.Parse(data.Speed);
                 wd.wind.Direction = data.Direction;
             }            wd.temperature.KelvinToCelsius();
-        }             catch(XmlException ex)
+        }             catch(XmlException )
             {
                 throw new WeatherDataServiceException("Wrong Country");
             }
-            catch (WebException ex)
+            catch (WebException )
             {
                 throw new WeatherDataServiceException("There is not internet connection");
             }

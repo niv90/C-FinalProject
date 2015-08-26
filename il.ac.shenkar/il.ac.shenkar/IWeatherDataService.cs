@@ -8,6 +8,11 @@ namespace il.ac.shenkar
     /// </summary>
     public interface IWeatherDataService
     {
+        /// <summary>
+        /// A virtual method that get the weather object of a chosen country.
+        /// </summary>
+        /// <param name="location">Location requested by user to get service.</param>
+        /// <returns>return a WeatherData object with all the params. </returns>
         WeatherData getWeatherData(Location location); 
     }
 }

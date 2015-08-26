@@ -7,6 +7,9 @@ namespace il.ac.shenkar
     /// </summary>
     public abstract class WeatherData : IWeatherDataService
     {
+
+        #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
         protected Location location;
         protected Cloud cloud;
         protected Humidity humidity;
@@ -15,6 +18,8 @@ namespace il.ac.shenkar
         protected Temperature temperature;
         protected SunRise sunrise;
         protected SunSet sunset;
+
+        #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 
         /// <summary>
         /// Will print all the details of the Country weather.

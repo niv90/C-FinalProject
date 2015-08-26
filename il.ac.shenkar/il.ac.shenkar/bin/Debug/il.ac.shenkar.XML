@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>il.ac.shenkar</name>
+    </assembly>
+    <members>
+        <member name="T:il.ac.shenkar.Cloud">
+            <summary>
+            This class describes the state of the clouds.
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.Cloud.Clouds">
+            <summary>
+            Gets and Sets the cloud value.
+            </summary>
+        </member>
+        <member name="T:il.ac.shenkar.Humidity">
+            <summary>
+            This class describes the state of the humidity.
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.Humidity.Humitidy">
+            <summary>
+            Gets and Sets the humidity value.
+            </summary>
+        </member>
+        <member name="T:il.ac.shenkar.IWeatherDataService">
+            <summary>
+            The interface creates a union of three main departments,
+             in order to allow the user to use the library,
+             he needs to call a method defined in the interface.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.IWeatherDataService.getWeatherData(il.ac.shenkar.Location)">
+            <summary>
+            A virtual method that get the weather object of a chosen country.
+            </summary>
+            <param name="location">Location requested by user to get service.</param>
+            <returns>return a WeatherData object with all the params. </returns>
+        </member>
+        <member name="T:il.ac.shenkar.LastUpdate">
+            <summary>
+            This class describes the last update of the service.
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.LastUpdate.Update">
+            <summary>
+            Gets and Sets the update value.
+            </summary>
+        </member>
+        <member name="T:il.ac.shenkar.Location">
+            <summary>
+            This class describes the country that the user ask for weather.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.Location.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.Location.#ctor(System.String)">
+            <summary>
+            Constructor that sets the country.
+            </summary>
+            <param name="location">Location requested by user to get service.</param>
+        </member>
+        <member name="P:il.ac.shenkar.Location.Country">
+            <summary>
+            Gets and Sets the country value.
+            </summary>
+        </member>
+        <member name="T:il.ac.shenkar.SunRise">
+            <summary>
+            This class describes the state of the Sunrise.
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.SunRise.Sunrise">
+            <summary>
+            Gets and Sets the sunrise value.
+            </summary>
+        </member>
+        <member name="T:il.ac.shenkar.SunSet">
+            <summary>
+            This class describes the state of the Sunrise.
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.SunSet.Sunset">
+            <summary>
+            Gets and Sets the sunset value.
+            </summary>
+        </member>
+        <member name="T:il.ac.shenkar.Temperature">
+            <summary>
+            This class describes the state of the Temperature.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.Temperature.KelvinToCelsius">
+            <summary>
+            Convert from kelvin to celsius
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.Temperature.Celsius">
+            <summary>
+            Gets and Sets the celsius value.
+            </summary>
+        </member>
+        <member name="T:il.ac.shenkar.WeatherData">
+            <summary>
+            An abstract class that define a Weather vairables.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.PrintAllDetails">
+            <summary>
+            Will print all the details of the Country weather.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.#ctor">
+            <summary>
+            Default constructor that initialize all the instance variable 
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetLocation">
+            <summary>
+            Get the location.
+            </summary>
+            <returns>Return the value of the location.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetCloud">
+            <summary>
+            Get the value of the clouds.
+            </summary>
+            <returns>Return the value of the clouds.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetSunRise">
+            <summary>
+            Get the value of the sunrise.
+            </summary>
+            <returns>Return the value of the sunrise.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetSunSet">
+            <summary>
+            Get the value of the sunset.
+            </summary>
+            <returns>Return the value of the sunset.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetHumidity">
+            <summary>
+            Get the value of the humidity.
+            </summary>
+            <returns>Return the value of the humidity.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.Getlastupdate">
+            <summary>
+            Get the value of the last update time.
+            </summary>
+            <returns>Return the value of the last update time.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetSpeed">
+            <summary>
+            Get the value of the wind speed.
+            </summary>
+            <returns>Return the value of the wind speed.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetDirection">
+            <summary>
+            Get the value of the wind direction.
+            </summary>
+            <returns>Return the value of the wind direction.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.GetTemperature">
+            <summary>
+            Get the value of the temperature.
+            </summary>
+            <returns>Return the value of the temperature.</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherData.getWeatherData(il.ac.shenkar.Location)">
+            <summary>
+            A virtual method that get the weather object of a chosen country.
+            </summary>
+            <param name="location">Location requested by user to get service.</param>
+            <returns>return a WeatherData object with all the params. </returns>
+        </member>
+        <member name="T:il.ac.shenkar.WeatherDataServiceException">
+            <summary>
+            This class describes the special exceptions. 
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataServiceException.#ctor(System.String)">
+            <summary>
+            A constructor that get a message from throw an exception. 
+            </summary>
+            <param name="message">Describes the message of the exception</param>
+        </member>
+        <member name="T:il.ac.shenkar.WeatherDataServiceFactory">
+            <summary>
+            A factory class for choose a REStful Web Service.
+            </summary>
+        </member>
+        <member name="F:il.ac.shenkar.WeatherDataServiceFactory.OPEN_WEATHER_MAP">
+            <summary>
+            Choose the www.openweathermap.com REStful Web Service.
+            </summary>
+        </member>
+        <member name="F:il.ac.shenkar.WeatherDataServiceFactory.WORLD_WEATHER_ONLINE">
+            <summary>
+            Choose the www.worldweatheronline.com REStful Web Service.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataServiceFactory.getWeatherDataService(System.String)">
+            <summary>
+            This method get from the user the web service that he want
+            to create an object, and create a singleton object.
+            </summary>
+            <param name="str">The desired service.</param>
+            <returns>Return an object from the type of the chosen REStful Web Service.</returns>
+        </member>
+        <member name="T:il.ac.shenkar.WeatherDataSite1">
+            <summary>
+            A class that inheritance from WeatherData and implemetns IWeatherDataService.
+            This class create an object in WeatherData type.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataSite1.Instance">
+            <summary>
+            A method that implements the singleton Design Pattern that creates
+             only 1 object.
+            </summary>
+            <returns>return a WeatherData object in type of WeatherDatasite1</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataSite1.getWeatherData(il.ac.shenkar.Location)">
+            <summary>
+            A virtual method that get the weather object of a chosen country.
+            </summary>
+            <param name="location">Location requested by user to get service.</param>
+            <returns>return a WeatherData object with all the params. </returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataSite1.XMLFunction(il.ac.shenkar.WeatherDataSite1,il.ac.shenkar.Location)">
+            <summary>
+            This function parsing the xml from the REStful Web Service site
+             and set all the values.
+            </summary>
+            <param name="wd">The WeatherData object. </param>
+            <param name="location">The requested location</param>
+        </member>
+        <member name="T:il.ac.shenkar.WeatherDataSite2">
+            <summary>
+            A class that inheritance from WeatherData and implemetns IWeatherDataService.
+            This class create an object in WeatherData type.
+            </summary>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataSite2.Instance">
+            <summary>
+            A method that implements the singleton Design Pattern that creates
+             only 1 object.
+            </summary>
+            <returns>return a WeatherData object in type of WeatherDatasite1</returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataSite2.getWeatherData(il.ac.shenkar.Location)">
+            <summary>
+            A virtual method that get the weather object of a chosen country.
+            </summary>
+            <param name="location">Location requested by user to get service.</param>
+            <returns>return a WeatherData object with all the params. </returns>
+        </member>
+        <member name="M:il.ac.shenkar.WeatherDataSite2.XMLFunction(il.ac.shenkar.WeatherDataSite2,il.ac.shenkar.Location)">
+            <summary>
+            A virtual method that get the weather object of a chosen country.
+            </summary>
+            <param name="wd">The WeatherData object. </param>
+            <param name="location">Location requested by user to get service.</param>
+            <returns>return a WeatherData object with all the params. </returns>
+        </member>
+        <member name="T:il.ac.shenkar.Wind">
+            <summary>
+            This class describes the state of the wind speed and direction.
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.Wind.Speed">
+            <summary>
+            Gets and Sets the speed value.
+            </summary>
+        </member>
+        <member name="P:il.ac.shenkar.Wind.Direction">
+            <summary>
+            Gets and Sets the direction value.
+            </summary>
+        </member>
+    </members>
+</doc>

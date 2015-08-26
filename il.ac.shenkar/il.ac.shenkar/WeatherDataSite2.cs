@@ -13,9 +13,10 @@ namespace il.ac.shenkar
     public class WeatherDataSite2 : WeatherData, IWeatherDataService
     {
         private String ip { get; set; }
-        private int clouds { get; set; }
         private static WeatherDataSite2 weatherdata;
-        private const String key = "7d5967e2ae100a83f53f356a8fa12";
+        
+        //authentication for the RESTFul web service
+        private const String key = "7d5967e2ae100a83f53f356a8fa12";  
         private WeatherDataSite2() : base() {}
 
         /// <summary>
@@ -56,6 +57,7 @@ namespace il.ac.shenkar
         /// <summary>
         /// A virtual method that get the weather object of a chosen country.
         /// </summary>
+        /// <param name="wd">The WeatherData object. </param>
         /// <param name="location">Location requested by user to get service.</param>
         /// <returns>return a WeatherData object with all the params. </returns>
         public void XMLFunction(WeatherDataSite2 wd, Location location)
@@ -69,7 +71,7 @@ namespace il.ac.shenkar
                 {
                     xml = client.DownloadString(URLString);// xml url to string
                 }
-                catch (WebException ex)
+                catch (WebException)
                 {
                     throw new WeatherDataServiceException("There is not internet connection");
                 }
@@ -82,6 +84,7 @@ namespace il.ac.shenkar
                 var weather = from x in ob.Descendants("data")
                               select new
                               {
+                                  City = x.Descendants("query").First().Value,
                                   Ip = x.Descendants("type").First().Value,
                                   Sun = x.Descendants("sunrise").First().Value,
                                   Set = x.Descendants("sunset").First().Value,
@@ -103,7 +106,7 @@ namespace il.ac.shenkar
                     {
                         throw new XmlException();
                     }
-
+                    wd.location.Country = data.City;
                     wd.sunrise.Sunrise = data.Sun;
                     wd.sunset.Sunset = data.Set;
                     wd.lastupdate.Update = data.Update;
@@ -114,12 +117,12 @@ namespace il.ac.shenkar
                     wd.wind.Direction = data.Direction;
                 }
             }
-            catch (XmlException ex)
+            catch (XmlException)
             {
 
                 throw new WeatherDataServiceException("Wrong Country");
             }
-            catch (WebException ex)
+            catch (WebException)
             {
                 throw new WeatherDataServiceException("There is not internet connection");
             }
