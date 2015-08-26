@@ -1,17 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace il.ac.shenkar
 {
-    class WeatherDataServiceException : Exception
+    /// <summary>
+    /// This class describes the special exceptions. 
+    /// </summary>
+    public class WeatherDataServiceException : ApplicationException
     {
-        public WeatherDataServiceException() : base() { }
-        public void XmlException()
+        /// <summary>
+        /// A constructor that get a message from throw an exception. 
+        /// </summary>
+        /// <param name="message">Describes the message of the exception</param>
+        public WeatherDataServiceException(String message) : base(message)
         {
-            Console.WriteLine("aaaaaaaaaaaaaaaaaaaaaaa");
+            
         }
     }
 }

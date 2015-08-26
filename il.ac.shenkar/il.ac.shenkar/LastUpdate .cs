@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace il.ac.shenkar
 {
-    class LastUpdate
+    /// <summary>
+    /// This class describes the last update of the service.
+    /// </summary>
+    public class LastUpdate
     {
-        public String Update { get; set; }
-      /*  DateTime date;
+        private String update;
 
-        public DateTime Update
+        /// <summary>
+        /// Gets and Sets the update value.
+        /// </summary>
+        public String Update
         {
             get
             {
@@ -21,15 +22,14 @@ namespace il.ac.shenkar
             {
                 if (value == null)
                 {
-                    Console.WriteLine("Wrong date");
+                    Console.WriteLine("Wrong value for update");
                 }
                 else
                 {
                     update = value;
                 }
 
-            }*/
-
-        
+            }
+        }
     }
 }

@@ -1,14 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace il.ac.shenkar
 {
-    class Temperature
+    /// <summary>
+    /// This class describes the state of the Temperature.
+    /// </summary>
+    public class Temperature
     {
         private double celsius;
+
+        /// <summary>
+        /// Convert from kelvin to celsius
+        /// </summary>
+        public void KelvinToCelsius()
+        {
+            celsius = celsius - 273;
+        }
+
+        /// <summary>
+        /// Gets and Sets the celsius value.
+        /// </summary>
         public double Celsius
         {
             get
@@ -17,7 +27,7 @@ namespace il.ac.shenkar
             }
             set
             {
-                celsius = value - 273;       //convert from kelvin to celsius
+                celsius = value;       
             }
         }
      

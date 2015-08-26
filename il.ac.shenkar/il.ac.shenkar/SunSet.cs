@@ -1,15 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace il.ac.shenkar
 {
-    class SunSet
+    /// <summary>
+    /// This class describes the state of the Sunrise.
+    /// </summary>
+    public class SunSet
     {
-        public String Date { get; set; }
-      //  DateTime Date { get; set; }
-        
+        private String sunset;
+
+        /// <summary>
+        /// Gets and Sets the sunset value.
+        /// </summary>
+        public String Sunset
+        {
+            get
+            {
+                return sunset;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    Console.WriteLine("Wrong value for sunset");
+                }
+                else
+                {
+                    sunset = value;
+                }
+
+            }
+        }
     }
 }

@@ -7,3 +7,4 @@ c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProj
 c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
 c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\obj\Debug\UnitTestProject.dll
 c:\users\arel\documents\visual studio 2015\Projects\UnitTestProject\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Users\Arel\Documents\Visual Studio 2015\Projects\UnitTestProject\UnitTestProject\bin\Debug\il.ac.shenkar.xml

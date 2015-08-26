@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace il.ac.shenkar
 {
-    class Humidity
+    /// <summary>
+    /// This class describes the state of the humidity.
+    /// </summary>
+    public class Humidity
     {
         private String humidity;
 
+        /// <summary>
+        /// Gets and Sets the humidity value.
+        /// </summary>
         public String Humitidy
         {
             get
@@ -18,7 +20,15 @@ namespace il.ac.shenkar
             }
             set
             {
-                humidity = value + "%";
+                if (value == null)
+                {
+                    Console.WriteLine("Wrong value for humidity");
+                }
+                else
+                {
+                    humidity = value + "%";
+                }
+                
             }
         }
     }

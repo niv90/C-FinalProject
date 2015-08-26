@@ -6,6 +6,9 @@ using System.Net;
 
 namespace UnitTestProject
 {
+    /// <summary>
+    /// Class that test the major Class and Methods in WeatherData using TDD methodology.
+    /// </summary>
     [TestClass]
     public class UnitTest1
     {
@@ -14,17 +17,18 @@ namespace UnitTestProject
         WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.OPEN_WEATHER_MAP);
         WeatherData weatherdata;
 
-        [TestMethod]
-        public void TestGetLocation()
-        {
-            weatherdata = service.getWeatherData(new Location("london"));
-            Assert.AreEqual("london", weatherdata.GetLocation());
-        }
+        /// <summary>
+        /// This method check if the web service is support the Const value.
+        /// </summary>
         [TestMethod]
         public void TestConstFactory()
         {
             Assert.IsNotNull(service);
         }
+
+        /// <summary>
+        /// Check that the temperature of london is between -15.5 to 45.5.
+        /// </summary>
         [TestMethod]
         public void TestGetTemperature()
         {
@@ -32,6 +36,11 @@ namespace UnitTestProject
             weatherdata = service.getWeatherData(new Location("london"));
             Assert.AreEqual(celsius, weatherdata.GetTemperature(), delta: 30);
         }
+
+        /// <summary>
+        /// Assert 1. Equal wrong country to a null.
+        /// Assert 2. Check that we got a a values from the site.
+        /// </summary>
         [TestMethod]
         public void TestGetWeatherData()
         {
@@ -40,6 +49,11 @@ namespace UnitTestProject
             Assert.AreEqual(null, wd2.GetSunRise());
             Assert.IsNotNull(wd1.GetSunRise());
         }
+
+        /// <summary>
+        /// Disconnect the internet in order to throw an excetion ( WebException )
+        /// and check if there is a fail.
+        /// </summary>
         [TestMethod]
         public void TestXMLInternet()
         {

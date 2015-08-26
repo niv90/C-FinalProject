@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace il.ac.shenkar
 {
-    class Cloud
+    /// <summary>
+    /// This class describes the state of the clouds.
+    /// </summary>
+    public class Cloud
     {
         private String clouds;
 
+        /// <summary>
+        /// Gets and Sets the cloud value.
+        /// </summary>
         public String Clouds
         {
             get
@@ -20,7 +22,7 @@ namespace il.ac.shenkar
             {
                 if(value == null)
                 {
-                    Console.WriteLine("Wrong cloud");
+                    Console.WriteLine("Wrong value for cloud");
                 }
                 else
                 {

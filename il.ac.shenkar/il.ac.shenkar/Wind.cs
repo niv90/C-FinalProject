@@ -1,17 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace il.ac.shenkar
 {
-    class Wind
+    /// <summary>
+    /// This class describes the state of the wind speed and direction.
+    /// </summary>
+    public class Wind
     {
         private double speed;
         private String direction;
 
-    public double Speed
+        /// <summary>
+        /// Gets and Sets the speed value.
+        /// </summary>
+        public double Speed
         {
             get
             {
@@ -30,7 +32,11 @@ namespace il.ac.shenkar
 
             }
         }
-     public String Direction
+
+        /// <summary>
+        /// Gets and Sets the direction value.
+        /// </summary>
+        public String Direction
         {
             get
             {

@@ -1,23 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace il.ac.shenkar
 {
-    class Location
+    /// <summary>
+    /// This class describes the country that the user ask for weather.
+    /// </summary>
+    public class Location
     {
-      private  String country;
+        private  String country;
 
-        public Location()
-        {
-           
-        }
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
+        public Location(){ }
+
+        /// <summary>
+        /// Constructor that sets the country.
+        /// </summary>
+        /// <param name="location">Location requested by user to get service.</param>
         public Location(String location)
         {
             country = location;
         }
+
+        /// <summary>
+        /// Gets and Sets the country value.
+        /// </summary>
         public String Country
         {
             get
@@ -26,7 +34,14 @@ namespace il.ac.shenkar
             }
             set
             {
-                country = value;
+                if (value == null)
+                {
+                    Console.WriteLine("Wrong value for country");
+                }
+                else
+                {
+                    country = value;
+                }
             }
         }
     }
